@@ -37,6 +37,8 @@ public class RaboAppRestController {
 				label = UUID.randomUUID().toString() + ".csv";
 			else if (multiPartFile.getContentType().equalsIgnoreCase(RaboAppConstants.FILE_TYPE_XML))
 				label = UUID.randomUUID().toString() + ".xml";
+			else
+				label = UUID.randomUUID().toString() + ".tmp";
 			final String filepath = "/tmp/" + label;
 			byte[] bytes = multiPartFile.getBytes();
 			File fh = new File("/tmp/");

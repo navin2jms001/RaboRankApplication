@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+<div th:if="${not #lists.isEmpty(invalidRecords)}">
     <table BORDER="1">
       <thead>
       <tr>
@@ -21,5 +22,9 @@
        </tr>
        </tbody>
     </table>
+    </div>
+    <div th:if="${#lists.isEmpty(invalidRecords)}">
+      <p>Invalid File Type, Valid values are XML/CSV/blank
+    </div>
 </body>
 </html>

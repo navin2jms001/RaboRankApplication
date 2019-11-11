@@ -42,9 +42,6 @@ public class RaboAppController {
 
 		List<ResultRecord> reportRecords = (List<ResultRecord>) raboAppService
 				.processRecordsAndGenerateReport(processFileType).getData();
-		if (reportRecords == null || reportRecords.isEmpty())
-			return null;
-
 		model.addAttribute("invalidRecords", reportRecords);
 		return "report";
 

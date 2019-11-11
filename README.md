@@ -27,7 +27,7 @@ At the end of the processing, a report needs to be created which will display bo
 1.	Clone the application RabobankApplication from GitHub
 
      In prompt window, enter the following command
-           'git clone https://github.com/navin2jms001/Assignment.git'
+           git clone https://github.com/navin2jms001/RaboRankApplication.git
 		   
     If GIT is not installed, download the zip and unzip to local computer.
 	
@@ -36,7 +36,7 @@ At the end of the processing, a report needs to be created which will display bo
 
 3.	Enter the following command to run the project
 
-            'gradlew bootrun'
+            gradlew bootrun
      
 4.	Wait until we get the log, "started RabobankApplication" for the application to get started.
 
@@ -66,12 +66,12 @@ At the end of the processing, a report needs to be created which will display bo
 
      Enter the following command
 	 
-        'gradlew clean test'
+        gradlew clean test
 
     Test results can be viewed in html format from below path,
     
      build\reports\tests\test\index.html 
 	 
 
-Note: For more detailed working of the application, refer Rabobank-RunBook under project folder. 
+Note: For more detailed working of the application, refer Rabobank-RunBook.
 
